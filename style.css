@@ -19,8 +19,7 @@ body {
 }
 
 section {
-  display: block;
-  unicode-bidi: isolate;
+  padding: 0 32px;
 }
 
 button {
@@ -44,6 +43,11 @@ a {
   justify-content: space-between;
   text-decoration: none;
 }
+
+.purple {
+  color: #6415ff;
+}
+
 
 /* 
 
@@ -141,6 +145,10 @@ HEADER
   padding: 96px 0;
 }
 
+.header__description {
+  width: 40%;
+}
+
 header .row {
   display: flex;
   align-items: center;
@@ -148,10 +156,6 @@ header .row {
 
 .header__img {
   width: 100%;
-}
-
-.header__description {
-  width: 40%;
 }
 
 .header__description--para {
@@ -170,7 +174,6 @@ header .row {
 
 .header__email--input {
   width: 100%;
-  border-radius: 500px;
   border: 2px solid rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
   color: rgb(36, 62, 99);
@@ -183,12 +186,18 @@ header .row {
   transition: border-color 300ms;
 }
 
+.header__email--input:focus {
+  outline: none;
+  border-color: rgba(100, 21, 255);
+}
+
 .header__email--btn {
   z-index: 2;
   margin: 8px;
-  height: 100px;
+  height: calc(100%-16px);
   border-radius: 500px;
   width: 160px;
+  height: 50px;
   border: none;
   background-color: #6415ff;
   color: #fff;
@@ -205,6 +214,7 @@ header .row {
 }
 
 .header__customers {
+  width: 100%;
   padding-right: 64px;
   margin-top: 16px;
   opacity: 0.5;
