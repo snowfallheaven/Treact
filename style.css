@@ -55,9 +55,33 @@ NAVBAR
 
 */
 
+
+
 .nav__container {
   display: flex;
   justify-content: space-between;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 378px;
+    margin: 24px 16px;
+    padding: 32px;
+    background-color: #fff;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(300%);
+    transition: all 300ms ease;
+}
+
+.menu--open .menu {
+  display: block;
 }
 
 .row {
@@ -97,12 +121,12 @@ NAVBAR
 .nav__link {
   font-size: 16px;
   font-weight: 600;
-  padding-top: 4px;
+  /* padding-top: 4px; */
   margin: 0 24px;
   letter-spacing: 0.35px;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
   position: relative;
-  transition: all 300ms;
+  /* transition: 300ms; */
 }
 
 .login {
@@ -116,16 +140,16 @@ NAVBAR
 }
 
 .nav__link--primary {
-  margin: 0;
-  padding: 10px 32px;
-  margin-top: 2px;
-  border-radius: 9999px;
-  color: #fff;
-  background-color: #6415ff;
+  color: rgb(255, 255, 255);
+  background-color: rgb(100, 21, 255);
   line-height: 1.5;
-  border: none;
   width: auto;
-  transition: all 300ms;
+  margin: 2px 0px 0px;
+  padding: 10px 32px;
+  border-radius: 500px;
+  border-width: medium;
+  border-style: none;
+  transition: 300ms;
 }
 
 .btn__menu {
@@ -174,14 +198,13 @@ header .row {
 
 .header__email--input {
   width: 100%;
+  border-radius: 500px;
   border: 2px solid rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
   position: absolute;
-  top: 0;
-  bottom: 0;
   z-index: 1;
   transition: border-color 300ms;
 }
