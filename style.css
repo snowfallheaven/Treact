@@ -730,6 +730,65 @@ Pricing
 
 /* 
 
+TESTIMONIALS
+
+*/
+
+
+#testimonials .container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#testimonials .row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+}
+
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#testimonials .section__title {
+  margin-bottom: 24px;
+  line-height: 1.25;
+}
+
+.testimonial {
+  margin-top: 40px;
+}
+
+.testimonial__rating {
+  color: rgba(246, 173, 85);
+  margin-right: 2px;
+  margin-top: 4px;
+}
+
+.fa-solid {
+  font-weight: 900;
+}
+
+.fa-star {
+  --fa: "\f005";
+}
+
+
+/* 
+
 LARGE SCREENS
 
 */
@@ -758,5 +817,11 @@ LARGE SCREENS
   }
   .plan__button {
     max-width: none;
+  }
+  .testimonials__img {
+    width: 40%;
+  }
+  .testimonials__description {
+    width: calc(100% - 40%)
   }
 }
