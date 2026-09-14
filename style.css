@@ -1230,24 +1230,49 @@ LARGE PHONES and TABLETS
     width: 100%;
     margin: 0px;
   }
+
+  #landing__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__description,
+  .header__img--wrapper {
+    width: 100%;
+    max-width: 448px;
+  }
+
   .feature__row {
     flex-wrap: wrap;
   }
   .menu--open .menu {
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(0);
-}
-.plans {
-  flex-direction: column;
-  align-items: center;
-  margin-top: 48px;
-}
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .plans {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+  }
 
-.plan {
-  width: 100%;
-  max-width: 384px;
-  margin: 0;
-}
+  .plan {
+    width: 100%;
+    max-width: 384px;
+    margin: 0;
+  }
+  #quality .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quality__description,
+  .quality__img--wrapper {
+    width: 100%;
+    max-width: 448px;
+  }
+  .quality__img--wrapper {
+    margin-top: 48px;
+  }
 }
 
