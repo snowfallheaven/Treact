@@ -1084,3 +1084,72 @@ LARGE SCREENS
     width: calc(100% - 40%)
   }
 }
+
+/* 
+
+FOR TABLETS AND LARGE PHONES
+
+*/
+
+@media (max-width: 1024px) {
+  .section__para {
+    max-width: 75%;
+  }
+  #features .section__para {
+    text-align: center;
+  }
+  .section__title {
+    font-size: 32px;
+  }
+  #steps .container {
+    padding: 72px 0;
+  }
+  #values .container {
+    padding: 32px;
+  }
+  .plan__feature {
+    line-height: 0.75;
+  }
+  .plan__price {
+    font-size: 32px;
+  }
+  .plan__button {
+    font-size: 0.5rem;
+  }
+}
+
+/* 
+
+LARGE PHONES and TABLETS
+
+*/
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+  .btn__menu {
+    display: block;
+    margin-top: 24px;
+    width: 40px;
+    height: 40px;
+    color: #6415ff;
+  }
+  .header__email--btn {
+    width: 100px;
+  }
+  .header__email--input {
+    width: 100%;
+  }
+  .header__img {
+    width: 75%;
+    padding-bottom: 8rem;
+  }
+  .header_customers {
+    width: 100%;
+    margin: 0px;
+  }
+  .feature__row {
+    flex-wrap: wrap;
+  }
+}
