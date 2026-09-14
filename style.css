@@ -1201,37 +1201,26 @@ LARGE PHONES and TABLETS
     height: 40px;
     color: #6415ff;
   }
-  .header__email--btn {
-    width: 100px;
-  }
-
-  .header__email--input {
-    width: 100%;
-  }
 
   .header__email {
     width: 100%;
     max-width: 448px;
   }
 
-  .header__description {
-    width: 55%;
-  } 
+  .header__email--input {
+    width: 100%;
+  }
 
-  .header__img--wrapper {
-    width: 45%
+  .header__email--btn {
+    width: 100px;
   }
-  
-  .header__img {
-    width: 75%;
-    padding-bottom: 8rem;
-  }
-  .header_customers {
+
+  .header__customers {
     width: 100%;
     margin: 0px;
   }
 
-  #landing__row {
+  .header .row {
     flex-direction: column;
     align-items: center;
   }
@@ -1240,6 +1229,11 @@ LARGE PHONES and TABLETS
   .header__img--wrapper {
     width: 100%;
     max-width: 448px;
+  }
+
+  .header__img {
+    width: 75%;
+    padding-bottom: 8rem;
   }
 
   .feature__row {
