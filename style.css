@@ -336,6 +336,7 @@ QUALITY
 
 #quality .row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -1266,18 +1267,28 @@ LARGE PHONES and TABLETS
     max-width: 384px;
     margin: 0;
   }
+
   #quality .row {
     flex-direction: column;
     align-items: center;
+    gap: 48px;
   }
 
-  .quality__description,
   .quality__img--wrapper {
+    order: -1;
     width: 100%;
     max-width: 448px;
+    margin: 0;
   }
-  .quality__img--wrapper {
-    margin-top: 48px;
+
+  .quality__description {
+    width: 100%;
+    max-width: 448px;
+    text-align: center;
+  }
+  #quality .btn {
+    display: block;
+    margin: 32px auto 0;
   }
 }
 
@@ -1348,9 +1359,35 @@ SMALL PHONES
     margin: 0;
   }
 
+  .quality__img {
+    margin-bottom: 75px;
+    justify-content: center;
+  }
+
+  .quality__description {
+    justify-content: center;
+  }
+
+  #quality .section__tag {
+    padding-top: 80px;
+  }
+
+  .quality__img--wrapper {
+    justify-content: center;
+  }
+
+  #steps .section__tag {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #steps .section__title {
+    justify-content: center;
+  }
+
   #steps .row {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   .steps__description {
@@ -1418,16 +1455,20 @@ SMALL PHONES
 #testimonials .row {
   flex-direction: column;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .testimonials__img {
   width: 500px;
+  margin: 0;
 }
 
 #testimonials .section__tag {
   padding-top: 6rem;
+}
+
+.testimonials__description {
+  width: 500px;
+  justify-content: center;
 }
 
 #testimonials .section__title {
@@ -1439,7 +1480,7 @@ SMALL PHONES
 }
 
 .testimonials__para {
-  width: 500px;
+  width: auto;
   max-width: 100%;
 }
 
@@ -1449,6 +1490,32 @@ SMALL PHONES
 
 .testimonial__buttons {
   display: flex;
+}
+.start__row {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.start__title {
+  font-size: 24px;
+  width: 450px;
+}
+
+.start__buttons {
+  margin-top: 24px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 480px;
+  justify-content: center;
+}
+
+.start__button {
+  padding-right: 40px;
+}
+
+.footer__copyright {
+  font-size: 14px;
 }
 }
 
