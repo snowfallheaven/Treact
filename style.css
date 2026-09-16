@@ -1423,6 +1423,7 @@ LARGE PHONES and TABLETS
 }
 }
 
+
 /* 
 
 SMALL PHONES
@@ -1727,6 +1728,36 @@ SMALL PHONES
 .start__button:nth-child(1) {
   margin-right: 0;
 }
+}
+
+
+/* 
+
+REALLY SMALL DEVICE 480px
+
+*/
+
+
+@media (max-width: 480px) {
+  .start__buttons {
+    flex-direction: column;
+  }
+
+  .testimonial__details {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .testimonial__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 48px;
+  }
 }
 
 
