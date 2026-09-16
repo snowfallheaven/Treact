@@ -183,6 +183,11 @@ NAVBAR
   transition: 300ms;
 }
 
+.nav__link--primary:hover {
+  background-color: rgb(80, 17, 204);
+  color:#f7fafc;
+}
+
 .btn__menu {
   background-color: transparent;
   border: none;
@@ -370,6 +375,10 @@ QUALITY
   transition: 300ms;
 }
 
+.btn:hover {
+  background-color: rgb(80, 17, 204);
+}
+
 .quality__img--wrapper {
   position: relative;
   z-index: 2;
@@ -496,7 +505,7 @@ VALUES
   line-height: 1.25;
 }
 
-.value__para {
+#value .section__para {
   margin-top: 16px;
   line-height: 1.625;
   color: #718096;
@@ -575,6 +584,7 @@ Pricing
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .plan {
@@ -1106,18 +1116,8 @@ LARGE SCREENS
 
 /* 
 
-FOR TABLETS AND LARGE PHONES
+FOR TABLETS AND LARGE PHONES1280
 
-*/
-
-@media (max-width: 1024px) {
-  .section__para {
-    max-width: 75%;
-  }
-
-  #features .section__para {
-    text-align: center;
-  }
 
   .section__title {
     font-size: 32px;
@@ -1273,8 +1273,12 @@ LARGE PHONES and TABLETS
     text-align: center;
   }
 
+  .steps__description {
+    padding-left: 0;
+}
+
   .steps__img {
-  width: 448px;
+  width: 100%;
   align-items: center;
 }
 
