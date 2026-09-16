@@ -1248,9 +1248,42 @@ LARGE PHONES and TABLETS
     padding-bottom: 8rem;
   }
 
-  .feature__row {
-    flex-wrap: wrap;
+  .features {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .feature__row  {
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: 0;
+  }
+
+  .feature__title, .feature__para {
+    text-align: center;
+    width: 350px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  #steps .row {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .steps__img {
+  width: 448px;
+  align-items: center;
+}
+
+#values .row {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 48px;
+}
+
   .menu--open .menu {
     visibility: visible;
     opacity: 1;
@@ -1266,6 +1299,10 @@ LARGE PHONES and TABLETS
     width: 100%;
     max-width: 384px;
     margin: 0;
+  }
+
+  .plan__button {
+    font-size: 24px;
   }
 
   #quality .row {
@@ -1290,6 +1327,96 @@ LARGE PHONES and TABLETS
     display: block;
     margin: 32px auto 0;
   }
+
+  #testimonials .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  #testimonials .testimonial__profile {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimonials .testimonial__buttons {
+  justify-content: center;
+}
+
+#values .section__tag,
+#steps .section__tag,
+#steps .section__title {
+  width: 100%;
+  max-width: 448px;
+  text-align: center;
+}
+
+#quality .quality__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 448px;
+  text-align: center;
+}
+
+#quality .quality__description .section__para {
+  text-align: center;
+}
+
+#quality .btn {
+  display: block;
+  margin: 32px auto 0;
+}
+#testimonials .row,
+#values .row,
+#quality .row {
+  width: 100%;
+  max-width: 448px;
+}
+
+.testimonials__img,
+.testimonials__description,
+.values__img,
+.values__description {
+  width: 100%;
+  max-width: 448px;
+}
+
+.testimonials__description {
+  padding-left: 0;
+}
+
+.values__description {
+  padding: 0;
+}
+
+#quality .quality__description {
+  margin-right: 0;
+}
+
+.start__title {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.start__buttons {
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.start__button {
+  min-width: 180px;
+  padding: 12px 40px;
+}
+
+.start__button:nth-child(1) {
+  margin-right: 0;
+}
 }
 
 /* 
@@ -1547,6 +1674,54 @@ SMALL PHONES
 #quality .btn {
   display: block;
   margin: 32px auto 0;
+}
+#testimonials .row,
+#values .row,
+#quality .row {
+  width: 100%;
+  max-width: 448px;
+}
+
+.testimonials__img,
+.testimonials__description,
+.values__img,
+.values__description {
+  width: 100%;
+  max-width: 448px;
+}
+
+.testimonials__description {
+  padding-left: 0;
+}
+
+.values__description {
+  padding: 0;
+}
+
+#quality .quality__description {
+  margin-right: 0;
+}
+
+.start__title {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.start__buttons {
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.start__button {
+  min-width: 180px;
+  padding: 12px 40px;
+}
+
+.start__button:nth-child(1) {
+  margin-right: 0;
 }
 }
 
